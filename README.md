@@ -6,4 +6,6 @@ Pandas loads the data and can plot using many backends:
   plots with the backend [`hvplot`](https://hvplot.holoviz.org/user_guide/Pandas_API.html).
 - `make run_plotly`:
   plots with the backend [`plotly`](https://plotly.com/python/pandas-backend/).
+- `make run_altair`:
+  plots with the backend [`altair`](https://plotly.com/python/pandas-backend/).
 - `make` will run with the default backend `matplotlib`.
