@@ -1,5 +1,7 @@
 INSTALL_PKG = pip install --quiet
 
+default: run_matplotlib
+
 
 base_dependencies:
 	$(INSTALL_PKG) install pandas
@@ -30,6 +32,3 @@ run_plotly: backend_plotly
 
 run_altair: backend_altair
 	python3 plot_altair.py
-
-
-default: run_matplotlib
