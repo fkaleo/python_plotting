@@ -1,19 +1,22 @@
+INSTALL_PKG = pip install --quiet
+
+
 base_dependencies:
-	pip install pandas
+	$(INSTALL_PKG) install pandas
 
 
 backend_matplotlib: base_dependencies
-	pip install matplotlib
+	$(INSTALL_PKG) install matplotlib
 
 backend_hvplot: base_dependencies
-	pip install hvplot
+	$(INSTALL_PKG) install hvplot
 
 backend_plotly: base_dependencies
-	pip install plotly
+	$(INSTALL_PKG) install plotly
 
 backend_altair: base_dependencies
-	pip install altair_viewer
-	pip install git+https://github.com/altair-viz/altair_pandas
+	$(INSTALL_PKG) install altair_viewer
+	$(INSTALL_PKG) install git+https://github.com/altair-viz/altair_pandas
 
 
 run_matplotlib: backend_matplotlib
